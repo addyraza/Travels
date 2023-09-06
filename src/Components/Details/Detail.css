@@ -1,0 +1,90 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.detail{
+    width: 100%;
+    height: 480px;
+    background-image: url(../Details/boat.jpg);
+    background-size: 100% 480px;
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.h {
+font-size:4rem;
+font-weight: bold;
+}
+#p{
+    font-size: 1.2rem;
+    font-weight: small;
+}
+.data{
+    width: 100%;
+    height: 250px;
+    color: white;
+    top: 10px;
+}
+.info{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.726);
+    gap: 4rem;
+    color: black;
+    position: relative;
+    bottom: 60px;
+    left: 15%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+input{
+    border: none;
+    background-color: transparent;
+}
+.info .input-info{
+    gap: 1rem;
+}
+.search{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px */
+    .detail {
+        /* position: fixed; */
+        height: 60vh;
+        background-size: cover;
+        padding-top: 1rem;
+    }
+    .h {
+        font-size: 2rem;
+    }
+    .data {
+        top: 0;
+    }
+    .info {
+        flex-direction: column;
+        width: 90%;
+        height: 60%;
+        left: 5%;
+        bottom: 120px;
+        font-size: 0.8rem;
+        gap: 1rem;
+        overflow: hidden;
+    }
+    .search {
+        width: 100%;
+        height: 60px;
+        border-radius: 0px;
+    }
+}
