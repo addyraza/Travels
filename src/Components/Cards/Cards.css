@@ -1,0 +1,28 @@
+.cards-container{
+    display: flex;
+    width:75rem;
+    height: 80px;
+    color: white;
+    top: 4rem;
+    gap: 2rem;
+}
+
+.cards{
+    display: flex;
+    width: 80rem;
+    height: 80px;
+    left: 1rem;
+}
+
+@media screen and (max-width:768){
+    .cards-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+}
