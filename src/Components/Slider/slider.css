@@ -11,32 +11,41 @@
     position: relative;
     background-color: white;
 }
+.over{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
 .image{
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    transition: transform .2s;
     gap: 2rem;
     cursor: pointer;
+    object-fit: cover;
+    transition: all 0.5s ease !important;
 }
-.image :hover{
-    transform: scale(1.5);
+.over :hover{
+    transform: scale(1.6);
 }
 @media screen and (max-width: 768px) {
     .slide {
-        height: auto; /* Adjust the height as needed */
-        padding: 1rem; /*Adjust padding as needed*/
+        height: auto;
+        padding: 1rem;
         top: 1rem;
     }
     .h{
         top: 1rem;
     }
-    
+    .over {
+        height: 100px;
+        width: 100px;
+        gap: 1rem;
+    }
     .image {
-         height: 100px; /* Adjust image size for smaller screens */
-         width: 100px; /* Adjust image size for smaller screens */
+         height: 100px;
+         width: 100px;
          gap: 1rem;
      } 
 } 
-
-/* <h1 style={{padding:"2rem"}}>Top destinations</h1> */

@@ -1,10 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
-// import Slider from 'bootstrap-slider';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './slider.css';
 function ImageSlider(props) {
+    const {headings} = props;
     const settings = {
       dots: true,
       infinite: true,
@@ -23,17 +23,15 @@ function ImageSlider(props) {
     './beach1.jpg',
       // Add more image URLs here
     ];
-    const {children} = props;
-    console.log(props.children);
   
     return (
       <div className='slide'>
         <h1 style={{padding:"2rem"}} className='h'>Top destinations</h1>
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} >
+          <div key={index} className='over'>
             <img src={image} alt={`Image ${index + 1}`} className='image'/>
-            <h3> {children} </h3>
+            <h3> {headings} </h3>
             <p>Tours</p>
           </div>
         ))}

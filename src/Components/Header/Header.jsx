@@ -16,7 +16,7 @@ export default function Header(props) {
     const {imgsrc}= props;
   return (
     <header className='header'>
-        <div className="logo">
+        <div className="logo" style={{cursor:"pointer"}}>
             <img src={imgsrc} alt="logo" />
         </div>
         <nav className='navbar'>
